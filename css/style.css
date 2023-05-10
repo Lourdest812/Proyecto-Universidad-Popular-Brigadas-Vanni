@@ -1,7 +1,16 @@
+/**{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*/
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     margin-top: 50px;
+}
+
+main{
     padding: 20px;
 }
 
@@ -59,6 +68,25 @@ nav{
     width: 50px;
 }
 
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    margin-top: 0;
+    height: 50px;
+}
+
+.image-container{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .redsoc{
     color:white;
     font-size: 1.5vw;
@@ -75,15 +103,6 @@ nav{
     color: #999999;
 }
 
-footer{
-    background-color: black;
-    color: white;
-    text-align: center;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    padding: 20px;
-    margin-top: 0;
-    height: 50px;
-}
+
+
 
