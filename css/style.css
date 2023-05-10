@@ -1,9 +1,8 @@
-/**{
-    margin: 0;
-    padding: 0;
+*{
     box-sizing: border-box;
+    padding: 0;
 }
-*/
+
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -65,20 +64,27 @@ nav{
 }
 
 .nav .logo{
-    width: 50px;
+    width: 100%;
 }
 
-
 footer{
-    background-color: black;
-    color: white;
-    text-align: center;
-    width: 100%;
+    position: absolute;
     bottom: 0;
     left: 0;
-    padding: 20px;
-    margin-top: 0;
-    height: 50px;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .image-container{
@@ -90,19 +96,45 @@ footer{
 .redsoc{
     color:white;
     font-size: 1.5vw;
-    text-align: center;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.redsoc li{
+    margin: 0 10px;
 }
 
 .redsoc a{
-    color: black;
+    color: #ffff;
     margin: 0px 6px;
     font-size: 2vw;
 }
 
-.redsoc a:hover{
-    color: #999999;
+.redsoc a:hover i{
+    color: aqua;
 }
 
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
 
+.footer-bottom{
+    background: #111;
+    width: 100vw;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
 
 
