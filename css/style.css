@@ -89,6 +89,11 @@ nav ul{
     font-weight: 600;
 }
 
+.logo{
+    padding: 20px;
+}
+
+
 /*MENU HAMBURGUESA*/
 
 a.active,  a:hover{
@@ -110,7 +115,7 @@ a.active,  a:hover{
     display: none;
 }
 
-@media(max-width: 850px){
+@media(max-width: 992px){
     .checkbtn{
         display: block;
     }
