@@ -93,13 +93,15 @@ nav ul{
     padding: 15px;
 }
 
-/*MENU HAMBURGUESA*/
+/*MENU HAMBURGUESA Y MENÚ DESPLEGABLE*/
 
-a.active,  a:hover{
-    background: rgba(31, 18, 132, 0.226);
+.links a.active, .links a:hover{
+    background: rgba(22, 107, 226, 0.743);
     transition: .5s;
+    color:#fff;
 }
 
+/*ÍCONO MENÚ HAMBURGUESA*/
 .checkbtn{
     font-size: 30px;
     color: rgb(12, 12, 87);
@@ -114,6 +116,8 @@ a.active,  a:hover{
     display: none;
 }
 
+
+/*RESPONSIVE*/
 @media(max-width: 992px){
     .checkbtn{
         display: block;
@@ -135,7 +139,7 @@ a.active,  a:hover{
     }
     nav ul li a:hover, nav ul li a.active{
         background: none;
-        color: rgba(241, 164, 9, 0.808);
+        color: rgba(244, 242, 237, 0.956);
     }
     #check:checked ~ ul{
         left: 0;
