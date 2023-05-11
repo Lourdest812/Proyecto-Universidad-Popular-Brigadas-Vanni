@@ -4,10 +4,17 @@
     margin: 0;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
-    
+    /*footer*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 main{
@@ -180,8 +187,9 @@ footer{
     right: 0;
     background: #11111179;
     width: 100%;
-    padding: 15px;
     color: #fff;
+    padding: 3rem;
+    margin-top: auto;
 }
 
 .footer-content{
@@ -194,12 +202,12 @@ footer{
 
 .redsoc{
     color:white;
-    font-size: 1.5vw;
+    font-size: 1vw;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 3rem 0;
+    margin: 1rem 0 1rem 0;
 }
 
 .redsoc li{
@@ -215,22 +223,6 @@ footer{
 .redsoc a:hover i{
     color: aqua;
 }
-
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.footer-bottom{
-    background: #11111100;
-    width: 100vw;
-    padding-bottom: 15px;
-    text-align: center;
-}
-
 
 .footer-bottom p{
     font-size: 14px;
