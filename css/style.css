@@ -9,7 +9,8 @@ html{
 }
 
 body{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
     height: 100vh;
     /*footer*/
     display: flex;
