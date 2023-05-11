@@ -182,11 +182,11 @@ nav .logo{
 
 /*FOOTER - hay que arreglarlo*/
 footer{
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #11111179;
+    background: #111111a8;
     width: 100%;
     color: #fff;
     padding: 3rem;
