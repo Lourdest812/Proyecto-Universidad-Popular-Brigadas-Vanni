@@ -11,12 +11,13 @@ body{
 }
 
 main{
-    padding: 75px;
+    padding: 100px;
 }
 
 h1{
     font-size: 2rem;
     color: rgb(11, 13, 114);
+    padding-bottom: 20px;
 }
 
 header{
@@ -41,6 +42,13 @@ header li {
 header * {
     display: inline;
     height: 50px;
+}
+
+.uni{
+    font-size: 30px;
+    padding-top: 15px;
+    color: rgb(11, 13, 114);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 nav{
@@ -89,14 +97,15 @@ nav ul{
     font-weight: 600;
 }
 
-.logo{
+ .logo{
     padding: 15px;
+    text-align: center;
 }
 
 /*MENU HAMBURGUESA Y MENÚ DESPLEGABLE*/
 
 .links a.active, .links a:hover{
-    background: rgba(22, 107, 226, 0.743);
+    background: rgba(11, 13, 114, 0.759);
     transition: .5s;
     color:#fff;
 }
