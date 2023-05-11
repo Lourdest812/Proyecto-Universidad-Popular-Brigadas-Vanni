@@ -1,16 +1,17 @@
 *{
     box-sizing: border-box;
     padding: 0;
+    margin: 0;
 }
 
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    margin-top: 50px;
+    height: 100vh;
+    
 }
 
 main{
-    padding: 20px;
+    padding: 75px;
 }
 
 h1{
@@ -26,6 +27,7 @@ header{
     right: 0;
     height: 50px;
     line-height: 50px;
+    background-color: #fff;
 }
 
 header ul {
@@ -42,8 +44,40 @@ header * {
 }
 
 nav{
+    height: 80px;
+    width: 100%;
+    /*
     padding: auto;
     text-align: center;
+    */
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.links, li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.links li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+.links li a{
+    list-style-type: none;
+    color:rgb(5, 7, 78);
+    text-decoration:none;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1,75rem;
+    font-weight: 600;
 }
 
 .nav{
@@ -55,27 +89,81 @@ nav{
     font-weight: 600;
 }
 
-.nav ul{
+/*MENU HAMBURGUESA*/
+
+a.active,  a:hover{
+    background: rgba(31, 18, 132, 0.226);
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: rgb(12, 12, 87);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media(max-width: 850px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(248, 245, 245);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a:hover, nav ul li a.active{
+        background: none;
+        color: rgba(241, 164, 9, 0.808);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+/*FIN CSS MENU HAMBURGUESA*/
+
+/*
+nav ul{
     padding: 0px;
     margin: 0px;
     text-align: center;
     display:inline-block;
     vertical-align:top;
 }
-
-.nav .logo{
+*/
+/*
+nav .logo{
     width: 100%;
 }
+*/
 
+/*FOOTER - hay que arreglarlo*/
 footer{
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #111;
-    height: auto;
-    width: 100vw;
-    padding-top: 40px;
+    background: #11111179;
+    width: 100%;
+    padding: 15px;
     color: #fff;
 }
 
@@ -85,12 +173,6 @@ footer{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-}
-
-.image-container{
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .redsoc{
@@ -126,15 +208,15 @@ footer{
 }
 
 .footer-bottom{
-    background: #111;
+    background: #11111100;
     width: 100vw;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     text-align: center;
 }
+
+
 .footer-bottom p{
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
 }
-
-
