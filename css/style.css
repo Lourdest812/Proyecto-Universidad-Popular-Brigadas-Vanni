@@ -182,7 +182,7 @@ nav .logo{
 
 /*FOOTER - hay que arreglarlo*/
 footer{
-    position: absolute;
+    position: sticky;
     bottom: 0;
     left: 0;
     right: 0;
@@ -191,6 +191,8 @@ footer{
     color: #fff;
     padding: 3rem;
     margin-top: auto;
+    top: 100%;
+
 }
 
 .footer-content{
