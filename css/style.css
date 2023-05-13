@@ -309,7 +309,7 @@ p{
     color: red;
     font-size: 3rem;
     font-weight: normal;
-    padding: 20px;
+
 }
 
 .container .frase{
@@ -318,7 +318,7 @@ p{
     display: flex;
     justify-content: space-between;
     */
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -352,7 +352,6 @@ p{
     width: 800px;
     display: block;
     margin: 0 auto;
-    padding: 20px;
     border: 0;
 }
 
@@ -361,23 +360,34 @@ p{
     .container{
         flex-direction: column;
     }
+
+    .container .image-container{
+        display: block;
+        margin: 0 auto;
+        max-width: 750px;
+    }
+
+    .container .image-container img{
+        width: 100%;
+    }
+
+    .container .frase{
+        padding: 20px;
+    }
 }
 
-@media(max-width: 771px){
+@media(max-width: 750px){
     .container{
         flex-direction: column;
     }
 
     .container .image-container{
         flex-direction: column;
-        max-width: 350px;
+        max-width: 730px;
     }
 
     .container .image-container img{
-        max-width: 100%;
+        width: 100%;
     }
-    /*
-    .container .frase{
-        margin-left: 20px;
-    }*/
+
 }
