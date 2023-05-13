@@ -22,7 +22,7 @@ body{
 }
 
 main{
-    padding-top: 100px;
+    padding-top: 10px;
     padding-left: 50px;
     padding-right: 50px;
     /*background-color: rgb(255, 255, 255);*/
@@ -44,7 +44,7 @@ header{
     line-height: 50px;
     background:rgb(255, 255, 255);
     width: 100%;
-    position: fixed;
+    position: relative;
 }
 
 
@@ -112,7 +112,7 @@ nav ul{
 /*MENU HAMBURGUESA Y MENÚ DESPLEGABLE*/
 
 .links a.active, .links a:hover{
-    background: rgba(11, 13, 114, 0.759);
+    background: rgba(11, 13, 114, 0.987);
     transition: .5s;
     color:#fff;
 }
@@ -231,30 +231,56 @@ footer{
     word-spacing: 2px;
     text-transform: capitalize;
 }
+/*
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
 
-.container .content .image-container img{
+.container .image-container img{
+    max-width: 100%;
+}
+
+.container .image-container{
+    flex-basis: 40%;
+}
+
+.container .frase{
+    font-size: 20px;
+    padding-left: 20px;
+}
+/*
+.container .image-container img{
     width: 100%;
     max-width: 400px;
     height: auto;
     /*margin-left: auto;
-    margin-right: auto;*/
+    margin-right: auto;
     display: block;
     margin: 0 auto;
+    padding: 20px;
 }
 
+.container .image-container{
+    width: 100%;
+}
+/*
 .container{
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
 
 .container .content{
     width: 100%;
     align-items: center;
-    /*justify-content: space-between;*/
+    display: flex;
+    justify-content: space-between;
     min-height: 100vh;
 }
+*/
 
 a{
     text-decoration: none;
@@ -267,20 +293,91 @@ a{
 .uni a:hover{
     color: #190894a8;
 }
-
+/*
 .container.content .frase{
-    padding: 0px 25px;
+    width: 100%;
+}
+*/
+p{
+    font-size: 18px;
+    font-family: 'Montserrat' sans-serif;
 }
 
-.details{
-    padding: 25px 15px;
-}
-
-.container .content .frase h2{
+.container .frase h2{
     font-family: 'Dancing script';
     text-align: center;
     color: red;
     font-size: 3rem;
-    padding: 50px 20px;
+    font-weight: normal;
+    padding: 20px;
 }
 
+.container .frase{
+    width: 100%;
+    /*
+    display: flex;
+    justify-content: space-between;
+    */
+    padding: 20px;
+    text-align: center;
+}
+
+
+.container{
+    width: 100%;
+    /*display: flex;*/
+    align-items: center;
+    padding: 20px;
+}
+
+.container .image-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+        /*
+        max-width: 600px;
+        margin: 10px;
+        padding: 15px;
+        display: flex;
+        flex: 0 0 150px;
+        */
+}
+
+.container .image-container img{
+    width: 100%;
+    height: auto;
+    /*max-width: 600px;
+        /*margin-left: auto;
+        margin-right: auto;*/
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    border: 0;
+}
+
+
+@media(max-width: 991px){
+    .container{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 771px){
+    .container{
+        flex-direction: column;
+    }
+
+    .container .image-container{
+        flex-direction: column;
+        max-width: 350px;
+    }
+
+    .container .image-container img{
+        max-width: 100%;
+    }
+
+    .container .frase{
+        margin-left: 20px;
+    }
+}
