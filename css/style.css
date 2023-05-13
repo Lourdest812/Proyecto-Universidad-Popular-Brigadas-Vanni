@@ -23,8 +23,8 @@ body{
 
 main{
     padding-top: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     /*background-color: rgb(255, 255, 255);*/
 }
 
@@ -44,7 +44,7 @@ header{
     line-height: 50px;
     background:rgb(255, 255, 255);
     width: 100%;
-    position: fixed;
+    position: absolute;
 }
 
 
@@ -113,6 +113,7 @@ nav ul{
 
 .links a.active, .links a:hover{
     background: rgba(11, 13, 114, 0.987);
+    border-radius: 30px;
     transition: .5s;
     color:#fff;
 }
@@ -303,6 +304,10 @@ p{
     font-family: 'Montserrat' sans-serif;
 }
 
+.details{
+    padding-bottom: 30px;
+}
+
 .container .frase h2{
     font-family: 'Dancing script';
     text-align: center;
@@ -318,22 +323,22 @@ p{
     display: flex;
     justify-content: space-between;
     */
-    padding: 30px;
+    padding: 35px;
     text-align: center;
 }
 
 
 .container{
-    width: 100%;
+    max-width: 100%;
     /*display: flex;*/
     align-items: center;
-    padding: 20px;
+    /*padding: 20px;*/
 }
 
 .container .image-container{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    /*justify-content: space-evenly;
         /*
         max-width: 600px;
         margin: 10px;
@@ -349,13 +354,13 @@ p{
     /*max-width: 600px;
         /*margin-left: auto;
         margin-right: auto;*/
-    width: 800px;
+    max-width: 1000px;
     display: block;
     margin: 0 auto;
     border: 0;
 }
 
-
+/*
 @media(max-width: 991px){
     .container{
         flex-direction: column;
@@ -390,4 +395,38 @@ p{
         width: 100%;
     }
 
+}
+*/
+
+.unc{
+    width: 120px;
+}
+
+.seu{
+    width: 120px;
+}
+
+.unc img{
+    width: 100%;
+    max-width: 100px;
+}
+
+.seu img{
+    width: 100%;
+    max-width: 50px;
+    size: 10px;
+}
+
+.asoc{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    
+}
+
+.asoc p{
+    font-size: 10px;
+    display: block;
+    flex-direction: column;
 }
