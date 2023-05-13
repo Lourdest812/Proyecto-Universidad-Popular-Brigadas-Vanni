@@ -250,7 +250,7 @@ footer{
 }
 
 .container .content{
-    width: 90%;
+    width: 100%;
     align-items: center;
     /*justify-content: space-between;*/
     min-height: 100vh;
@@ -269,12 +269,11 @@ a{
 }
 
 .container.content .frase{
-    padding: 50px;
+    padding: 0px 25px;
 }
 
 .details{
-    padding: 1em 2em 2em;
-    padding-bottom: 25px;
+    padding: 25px 15px;
 }
 
 .container .content .frase h2{
@@ -282,6 +281,6 @@ a{
     text-align: center;
     color: red;
     font-size: 3rem;
-    padding: 50px;
+    padding: 50px 20px;
 }
 
