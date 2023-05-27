@@ -9,29 +9,31 @@ html{
 }
 
 body{
-    /*font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
     /*footer*/
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    /*background-image: url(/img/yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg);*/
     background-color: rgb(255, 255, 255);
     background-repeat: no-repeat;
 }
 
 main{
-    padding-top: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
-    /*background-color: rgb(255, 255, 255);*/
+    padding: 100px 100px 0px 100px;
 }
 
 h1{
     font-size: 2rem;
     color: rgb(11, 13, 114);
     padding-bottom: 20px;
+}
+
+.titulo_cursos{
+    font-size: 1.5rem;
+    color: rgb(11, 13, 114);
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 
@@ -44,7 +46,7 @@ header{
     line-height: 50px;
     background:rgb(255, 255, 255);
     width: 100%;
-    position: absolute;
+    position: fixed;
 }
 
 
@@ -61,6 +63,10 @@ header * {
     height: 50px;
 }
 
+a{
+    text-decoration: none;
+}
+
 .uni{
     font-size: 30px;
     padding-top: 15px;
@@ -68,11 +74,24 @@ header * {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.uni a{
+    color: rgb(11, 13, 114);
+}
+
+.uni a:hover{
+    color: #190894a8;
+}
+
+p{
+    font-size: 18px;
+    font-family: 'Montserrat' sans-serif;
+}
+
 nav{
     height: 80px;
     width: 100%;
     text-align: center;
-    padding-bottom: 50px;
+   
 }
 
 nav ul{
@@ -161,24 +180,23 @@ nav ul{
     #check:checked ~ ul{
         left: 0;
     }
+    main{
+        /* top | right | bottom | left */
+        padding: 100px 10px 0px 10px;
+    }
+    .video iframe{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .video {
+        overflow: hidden;
+        padding-top: 5%;
+        width: 100%;
+        height: 100%;
+        
+      }
 }
-
-/*FIN CSS MENU HAMBURGUESA*/
-
-/*
-nav ul{
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-    display:inline-block;
-    vertical-align:top;
-}
-*/
-/*
-nav .logo{
-    width: 100%;
-}
-*/
 
 /*FOOTER - hay que arreglarlo*/
 footer{
@@ -192,7 +210,6 @@ footer{
     padding: 3rem;
     margin-top: auto;
     top: 100%;
-
 }
 
 .footer-content{
@@ -210,7 +227,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 1rem 0;
+    margin: 0.5rem 0 0.5rem 0;
 }
 
 .redsoc li{
@@ -232,78 +249,42 @@ footer{
     word-spacing: 2px;
     text-transform: capitalize;
 }
-/*
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0px;
+.unc{
+    width: 120px;
 }
 
-.container .image-container img{
-    max-width: 100%;
+.seu{
+    width: 120px;
 }
 
-.container .image-container{
-    flex-basis: 40%;
-}
-
-.container .frase{
-    font-size: 20px;
-    padding-left: 20px;
-}
-/*
-.container .image-container img{
+.unc img{
     width: 100%;
-    max-width: 400px;
-    height: auto;
-    /*margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin: 0 auto;
+    max-width: 100px;
+    cursor: pointer;
+}
+
+.seu img{
+    width: 100%;
+    max-width: 50px;
+    size: 10px;
+    cursor: pointer;
+}
+
+.asoc{
     padding: 20px;
-}
-
-.container .image-container{
-    width: 100%;
-}
-/*
-.container{
-    width: 100%;
-    display: flex;
-
-}
-
-.container .content{
-    width: 100%;
-    align-items: center;
     display: flex;
     justify-content: space-between;
-    min-height: 100vh;
-}
-*/
-
-a{
-    text-decoration: none;
+    color: #fff;
+    
 }
 
-.uni a{
-    color: rgb(11, 13, 114);
+.asoc p{
+    font-size: 10px;
+    display: block;
+    flex-direction: column;
 }
 
-.uni a:hover{
-    color: #190894a8;
-}
-/*
-.container.content .frase{
-    width: 100%;
-}
-*/
-p{
-    font-size: 18px;
-    font-family: 'Montserrat' sans-serif;
-}
-
+/*IMAGEN Y FRASE INDEX*/
 .details{
     padding-bottom: 30px;
 }
@@ -319,114 +300,88 @@ p{
 
 .container .frase{
     width: 100%;
-    /*
-    display: flex;
-    justify-content: space-between;
-    */
-    padding: 35px;
     text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 
 .container{
     max-width: 100%;
-    /*display: flex;*/
     align-items: center;
-    /*padding: 20px;*/
 }
 
 .container .image-container{
     width: 100%;
     display: flex;
-    /*justify-content: space-evenly;
-        /*
-        max-width: 600px;
-        margin: 10px;
-        padding: 15px;
-        display: flex;
-        flex: 0 0 150px;
-        */
 }
 
 .container .image-container img{
     width: 100%;
     height: auto;
-    /*max-width: 600px;
-        /*margin-left: auto;
-        margin-right: auto;*/
     max-width: 1000px;
     display: block;
     margin: 0 auto;
     border: 0;
 }
 
-/*
-@media(max-width: 991px){
-    .container{
-        flex-direction: column;
-    }
+/*TABLA DE CURSOS*/
 
-    .container .image-container{
-        display: block;
-        margin: 0 auto;
-        max-width: 750px;
-    }
-
-    .container .image-container img{
-        width: 100%;
-    }
-
-    .container .frase{
-        padding: 20px;
-    }
+th, td {
+    padding: 8px;
 }
 
-@media(max-width: 750px){
-    .container{
-        flex-direction: column;
-    }
-
-    .container .image-container{
-        flex-direction: column;
-        max-width: 730px;
-    }
-
-    .container .image-container img{
-        width: 100%;
-    }
-
-}
-*/
-
-.unc{
-    width: 120px;
+.izquierda{
+    background-color: rgb(255, 184, 18);
+    color: rgb(0, 0, 0);
+    font-weight: 400;
 }
 
-.seu{
-    width: 120px;
+th{
+    width: 25%;
+    background-color: #222223;
+    color: white;
+    font-size: 0.875rem;
+	text-transform: uppercase;
+	letter-spacing: 2%;
 }
 
-.unc img{
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+  
+  tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tbody tr:nth-child(even) .izquierda {
+    background-color: rgba(255, 187, 0, 0.879);
+  }
+
+
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+.tabla{
+    padding-bottom: 50px;
+    vertical-align: middle;
+    text-align: center;
+    overflow-x:auto;
+}
+
+
+.video{
+    text-align: center;
     width: 100%;
-    max-width: 100px;
+    height: 100%;
+    padding-bottom: 50px;
 }
 
-.seu img{
-    width: 100%;
-    max-width: 50px;
-    size: 10px;
-}
-
-.asoc{
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
-    
-}
-
-.asoc p{
-    font-size: 10px;
-    display: block;
-    flex-direction: column;
+.video iframe{
+    width: 900px;
+    height: 500px;
 }
