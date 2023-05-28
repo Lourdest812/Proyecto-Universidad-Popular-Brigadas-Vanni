@@ -496,6 +496,7 @@ ALGUNOS DISPOSITIVOS*/
   align-items: center;
   text-align: center;
   padding: 30px;
+  max-width: 100%;
 }
   
   #current-image { 
@@ -518,11 +519,12 @@ ALGUNOS DISPOSITIVOS*/
   }
 
   .thumb { 
-    width: 80px; 
-    height: 80px; 
+    width: 70px; 
+    height: 70px; 
     object-fit: cover; 
     margin-right: 10px; 
     cursor: pointer;
+    max-width: 100%;
   }
 
   .titulo_aboutUs h2{
