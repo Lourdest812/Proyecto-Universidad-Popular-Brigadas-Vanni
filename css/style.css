@@ -128,6 +128,7 @@ nav ul{
     text-align: center;
 }
 
+
 /*MENU HAMBURGUESA Y MENÚ DESPLEGABLE*/
 
 .links a.active, .links a:hover{
@@ -191,11 +192,14 @@ nav ul{
     
     .video {
         overflow: hidden;
-        padding-top: 5%;
         width: 100%;
         height: 100%;
         
-      }
+    }
+    .container .image-container img{
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 /*FOOTER - hay que arreglarlo*/
@@ -302,7 +306,7 @@ footer{
     width: 100%;
     text-align: center;
     padding-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 
@@ -312,17 +316,29 @@ footer{
 }
 
 .container .image-container{
-    width: 100%;
-    display: flex;
+    max-width: 100%;
+    /*text-align: center;
+    padding: 10px 20px;*/
 }
 
-.container .image-container img{
-    width: 100%;
-    height: auto;
-    max-width: 1000px;
+
+.image-container img{
+    height: 100%;
+    max-width: 100%;
     display: block;
     margin: 0 auto;
     border: 0;
+    object-fit: fill;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.752);*/
+    /*box-shadow:0px 4px 8px 0px #00000085;
+    clip-path:polygon(0 0,100% 0,200% 100%,200% 200%,100% 200%,0 100%);
+    /*width: 80%;
+    background-color: white;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding-left: 20px;*/
 }
 
 /*TABLA DE CURSOS*/
@@ -373,7 +389,7 @@ table{
     overflow-x:auto;
 }
 
-
+/*VIDEO SOBRE NOSOTROS*/
 .video{
     text-align: center;
     width: 100%;
@@ -385,3 +401,4 @@ table{
     width: 900px;
     height: 500px;
 }
+
