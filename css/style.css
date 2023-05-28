@@ -468,8 +468,12 @@ table{
 }
 
 .botones{
-    padding: 30px;
+    padding: 20px;
     text-align: center;
+}
+
+.container-api{
+    padding: 20px;
 }
 
 .btn_1{
