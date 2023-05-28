@@ -203,6 +203,7 @@ nav ul{
     .user-profile{
         max-width: 100%;
     }
+    
 }
 
 /*FOOTER - hay que arreglarlo*/
@@ -467,11 +468,10 @@ table{
 }
 
 .botones{
-    padding: 50px;
+    padding: 30px;
     text-align: center;
 }
 
-.container-api{
-    padding: 30px;
+.btn_1{
+    padding: 15px;
 }
-
