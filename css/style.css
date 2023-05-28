@@ -200,6 +200,9 @@ nav ul{
         max-width: 100%;
         height: auto;
     }
+    .user-profile{
+        max-width: 100%;
+    }
 }
 
 /*FOOTER - hay que arreglarlo*/
@@ -400,5 +403,75 @@ table{
 .video iframe{
     width: 900px;
     height: 500px;
+}
+
+
+/*CONTACTOS RANDOM API*/
+
+.user-profile{
+    padding-top: 20px;
+    background-color: #0a95f1;
+    margin-top: 6%;
+    border-radius: 1rem;
+    overflow: hidden;
+    height: 100%;
+    width: 400px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 0;
+}
+
+.profile-top{
+    /*background: linear-gradient(to right, #6e2e80 #0eac13);*/
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+}
+
+.profile-top .profile-info{
+    margin-top: 1.5rem;
+}
+
+.profile-top img{
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.profile-bottom{
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+.profile-bottom .profile-info{
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+    width: 100%;
+    font-size: 13px;
+}
+
+.button{
+    background-color: #ff8800;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.botones{
+    padding: 50px;
+    text-align: center;
+}
+
+.container-api{
+    padding: 30px;
 }
 

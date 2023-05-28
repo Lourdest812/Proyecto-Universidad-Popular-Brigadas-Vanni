@@ -23,9 +23,8 @@
     <title>Contacto</title>
 </head>
 <body>
-    <div id="app"></div>
-    <script src="js/index.js" type="module"></script>
     <header>
+        !--
         <div class="logo">
             <a href="index.html"><img src="img/logo_no_background.png" alt="logo-upb" sizes="32x32"></a>
         </div>
@@ -46,14 +45,33 @@
         </nav>
     </header>
     <main>
-        <h1>Contacto</h1>
-        <section class="details">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi praesentium quis 
-                aliquam quo exercitationem architecto ea laudantium est, rem rerum non delectus 
-                nisi et in, recusandae earum porro incidunt neque!
-            </p>
+        <h1>Contactos registrados</h1>
+        <section class="container-api">
+            <div class="user-profile">
+                <div class="profile-top">
+                    <img id="image" src="#" alt="contacto-foto">
+                    <div class="profile-info">
+                        <span id="name">Nombre</span>
+                        <span></span>
+                        <span id="gender">Género</span>
+                    </div>
+                </div>
+                <div class="profile-bottom">
+                    <div class="profile-info">
+                        <span id="email">Email</span>
+                    </div>
+                <div class="profile-info">
+                    <span id="phone">Teléfono</span>
+                </div>
+                <div class="profile-info">
+                    <span id="location">País</span>
+                </div>
+            </div>
+        </div>
         </section>
-        <a href="contactos.html"><button class="button">Ver contactos</button></a>
+        <div class="botones">
+            <a href="#"><button onclick="getRandomUser()" class="button">Generar contacto</button></a>
+        </div>
     </main>
     <footer>
             <div class="footer-content">
@@ -79,5 +97,6 @@
                 </div>
             </div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>
