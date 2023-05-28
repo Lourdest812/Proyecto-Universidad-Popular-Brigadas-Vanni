@@ -5,7 +5,6 @@
     console.log(user);
     displayUser(user);
   }
-  getRandomUser();
 
   function displayUser(user){
     const name = document.getElementById('name');
