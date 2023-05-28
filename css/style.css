@@ -29,6 +29,8 @@ h1{
     padding-bottom: 20px;
 }
 
+
+
 .titulo_cursos{
     font-size: 1.5rem;
     color: rgb(11, 13, 114);
@@ -203,6 +205,10 @@ nav ul{
     .user-profile{
         max-width: 100%;
     }
+    #current-image { 
+        max-width: 100%;
+        height: auto;
+      } 
     
 }
 
@@ -321,8 +327,8 @@ footer{
 
 .container .image-container{
     max-width: 100%;
-    /*text-align: center;
-    padding: 10px 20px;*/
+    /*text-align: center;*/
+    
 }
 
 
@@ -478,4 +484,49 @@ table{
 
 .btn_1{
     padding: 15px;
+}
+
+
+
+/*GALERÍA DE IMÁGENES DE ABOUTUS, NO ES DEL TODO RESPONSIVE, FALLA EN 
+ALGUNOS DISPOSITIVOS*/
+  
+  #image-gallery {  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+  
+  #current-image { 
+    width: 900px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  } 
+
+  #current-image img{
+    max-width: 100%;
+}
+
+  #image-thumbs { 
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px;
+    max-width: 100%;
+  }
+
+  .thumb { 
+    width: 80px; 
+    height: 80px; 
+    object-fit: cover; 
+    margin-right: 10px; 
+    cursor: pointer;
+  }
+
+  .titulo_aboutUs h2{
+    font-size: 1.5rem;
+    color: rgb(11, 13, 114);
+    text-align: center;
 }

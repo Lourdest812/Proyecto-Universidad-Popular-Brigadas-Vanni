@@ -20,18 +20,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 
-    <title>Contacto</title>
+    <title>Sobre nosotros</title>
 </head>
 <body>
-    <div id="app"></div>
-    <script src="js/index.js" type="module"></script>
     <header>
-        <div class="logo">
+        <label class="logo">
             <a href="index.html"><img src="img/logo_no_background.png" alt="logo-upb" sizes="32x32"></a>
-        </div>
-        <span class="uni">
+        </label>
+        <div class="uni">
             <h3><a href="index.html">UPBV</a></h3>
-        </span>
+        </div>
         <nav>
             <input type="checkbox" id="check">
                 <label for="check" class="checkbtn">
@@ -40,14 +38,22 @@
             <ul class="links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="about.html">Sobre nosotros</a></li>
-                <li><a class="active" href="contacto.html">Contacto</a></li>
+                <li><a class="active" href="about.html">Sobre nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Contacto</h1>
-        <a href="contactos.html"><button class="button">Ver contactos</button></a>
+        <section class="titulo_aboutUs">
+                <h2>Galería de imágenes</h2> 
+                <div id="image-gallery">
+                    <img id="current-image" src="img/image1.jpg" alt="Image 1">
+                    <div id="image-thumbs"></div>
+                </div>
+        </section>
+        <div class="btn_1">
+            <a href="about.html"><button class="button">Volver</button></a>
+        </div>
     </main>
     <footer>
             <div class="footer-content">
@@ -73,5 +79,6 @@
                 </div>
             </div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>
