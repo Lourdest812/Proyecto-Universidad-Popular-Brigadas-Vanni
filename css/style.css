@@ -302,8 +302,8 @@ footer{
 
 /*IMAGEN Y FRASE INDEX*/
 .details{
-    /* top | left and right | bottom */
-    
+    /* top | right | bottom | left */
+    padding: 10px 0 20px 0;
 }
 
 .container .frase h2{
@@ -480,9 +480,6 @@ table{
     border-radius: 1rem;
 }
 
-.button a:hover{
-    color: antiquewhite;
-}
 
 .botones{
     padding-bottom: 20px;
@@ -495,6 +492,7 @@ table{
 
 .btn_1{
     padding: 15px;
+    text-align: center;
 }
 
 
@@ -551,6 +549,12 @@ ALGUNOS DISPOSITIVOS*/
     /* top | right | bottom | left */
     padding-top: 40px;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#button-image{
+    display: grid;  
+    margin: auto;
     text-align: center;
 }
 
