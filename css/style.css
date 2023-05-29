@@ -30,6 +30,13 @@ h1{
     padding: 20px 0 20px 0;
 }
 
+h2{
+    font-size: 1.5rem;
+    color: rgb(11, 13, 114);
+    /* top | right | bottom | left */
+    padding: 20px 0 20px 0;
+}
+
 
 
 .titulo_cursos{
@@ -543,7 +550,7 @@ ALGUNOS DISPOSITIVOS*/
 }
 
 .titulo_contacto{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 800;
     color: rgb(11, 13, 114);
     /* top | right | bottom | left */
