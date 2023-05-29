@@ -415,6 +415,10 @@ table{
 
 /*CONTACTOS RANDOM API*/
 
+.titulo_contact h1{
+    text-align: center;
+}
+
 .user-profile{
     padding-top: 20px;
     background-color: #0a95f1;
