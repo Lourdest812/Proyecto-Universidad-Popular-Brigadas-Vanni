@@ -570,7 +570,3 @@ button:disabled{
     cursor:not-allowed;
 }
 
-button:hover{
-    background-color: rgba(254, 188, 83, 0.979);
-}
-
