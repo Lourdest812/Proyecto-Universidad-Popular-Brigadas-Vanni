@@ -558,3 +558,8 @@ ALGUNOS DISPOSITIVOS*/
     text-align: center;
 }
 
+button:disabled{
+    background-color: #00000064;
+    cursor:not-allowed;
+}
+
