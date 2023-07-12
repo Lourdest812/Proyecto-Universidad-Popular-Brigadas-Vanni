@@ -131,7 +131,7 @@ def update_contacto(id):
 def uploads(nombreFoto):
  return send_from_directory(app.config['CARPETA'], nombreFoto)
 
-@app.route('/index')
+@app.route('/')
 def inicio():
     return render_template('original/index.html')
 
