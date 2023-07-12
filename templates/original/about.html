@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link a style.css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!--Link a favicon-->
+    <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <!--Link a fontawesome-->
+    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+
+     <!--Links a Google fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+
+    <title>Sobre nosotros</title>
+</head>
+<body>
+    <header>
+        <label class="logo">
+            <a href="/index"><img src="static/img/logo_no_background.png" alt="logo-upb" sizes="32x32"></a>
+        </label>
+        <div class="uni">
+            <h3><a href="/index">UPBV</a></h3>
+        </div>
+        <nav>
+            <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            <ul class="links">
+                <li><a href="/index">Inicio</a></li>
+                <li><a href="/cursos">Cursos</a></li>
+                <li><a class="active" href="/about">Sobre nosotros</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+                <li><a href="/gestion">Gestión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            
+            <div class="video">
+                <iframe class="video-iframe" src="https://www.youtube.com/embed/cj4V7vQqLTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <h2 class="titulo_contact">Sobre nosotros</h2>
+            <div class="details">
+                <p>
+                    Esta Universidad Popular se encuentra ubicada en Villa 9 de Julio, Argüello (Córdoba Capital), una zona muchas veces olvidada de la ciudad de Córdoba.  En este lugar, donde antes sólo había un basural, hoy hay un punto de encuentro, de cultura y de educación.
+    Hoy es un lugar que se pone en marcha al servicio de la educación de la población más vulnerable.
+    Mediante el dictado de cursos, talleres y actividades, en esta Universidad Popular vemos una forma de que lleguen las oportunidades a quienes las necesitan. 
+    Esta apuesta educativa es para todas las personas que quieran aprender y superarse. 
+                </p>
+            </div>
+            <h2 class="titulo_contact">¿Qué se hace en la Universidad Popular Brigadas Vanni?</h2>
+            <div class="details">
+                <p> 
+    Se ofrecen cursos y capacitaciones, no sólo en oficios sino en en diversos temas, como por ejemplo: curso de administración para emprendedores, cursos de ayuda para mujeres, etc.
+    Aquí se trabaja con las redes de intercambio de la economía popular y otros proyectops relacionados.
+    También, en este mismo espacio, hay una pequeña huerta, una biblioteca; funciona un comedor y se realizan diversos eventos y actividades de interés cultural y social.
+    
+    Este pequeño espacio enclavado en el norte se la ciudad de Córdoba funciona como una herramienta para aquellos que pensaban que no podían estudiar; aquellos que hoy tienen la posibilidad de a una formación de calidad; que además otorga una certificación oficial de la UNC.
+    Es una manera de formar/capacitar a aquellas personas que no tienen los recursos para acceder a la educación. Una manera de acercar la formación a la gente.
+    Este espacio de alto compromiso social es también un vehículo para unir a la comunidad universitaria con los demás estratos de la sociedad a la que pertenece.
+    El Objetivo de esta propuesta Social y Educativa es lograr que la gente salga de la pobreza, y que los niños y juventud salgan de las calles, siempre mediante la educación y la cultura.
+                </p>
+            
+            </div>
+        </section>
+        
+        <div class="btn_1">
+            <a href="/galeria"><button class="button" id="button_images">Galería</button></a>
+        </div>
+    </main>
+    <footer>
+            <div class="footer-content">
+                <ul class="redsoc">
+                    <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li> <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li> <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+                <div class="footer-bottom">
+                    <p><b>Derechos Reservados @2023</b></p>
+                </div>
+                <div class="asoc">
+                    <div class="unc">
+                        <a href="https://www.unc.edu.ar/"><img src="img/unc.jpg" alt="unc"></a>
+                        <p><b>Universidad Nacional de Córdoba</b></p>
+                    </div>
+                    <div class="seu">
+                        <a href="https://www.unc.edu.ar/extensi%c3%b3n/"><img src="img/SEU.jpg" alt="seu"></a>
+                        <p><b>Secretaria de Extensión Universitaria</b></p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>

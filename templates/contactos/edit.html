@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link a style.css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!--Link a favicon-->
+    <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <!--Link a fontawesome-->
+    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+
+     <!--Links a Google fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+    <title>Actualizar datos</title>
+</head>
+<html>
+    <body>
+        <h1>Actualizar estudiante</h1>
+        <div class="formulario-gestion">
+            <form action="/update/{{contacto.0}}" method='POST'enctype="multipart/form-data">
+                <div>
+                Nombre completo: <input type="text" name="fullname" value="{{contacto.1}}">
+                </div>
+                <div>
+                Correo: <input type="text"name="email" value="{{contacto.3}}">
+                </div>
+                <div>
+                Teléfono: <input type="text" name="phone" value="{{contacto.4}}">
+                </div>
+                <div>
+                Género: <input type="text" name="genero" value="{{contacto.2}}">
+                </div>
+                <div>
+                País: <input type="text" name="pais" value="{{contacto.5}}">
+                </div>
+                <div>
+                Foto: <input type="file" name="foto" value="{{contacto.6}}">
+                </div>
+                <div class="btn">
+                    <button type="submit">Actualizar</button>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <ul class="redsoc">
+                    <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li> <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li> <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+                <div class="footer-bottom">
+                    <p><b>Derechos Reservados @2023</b></p>
+                </div>
+                <div class="asoc">
+                    <div class="unc">
+                        <a href="https://www.unc.edu.ar/"><img src="img/unc.jpg" alt="unc"></a>
+                        <p><b>Universidad Nacional de Córdoba</b></p>
+                    </div>
+                    <div class="seu">
+                        <a href="https://www.unc.edu.ar/extensi%c3%b3n/"><img src="img/SEU.jpg" alt="seu"></a>
+                        <p><b>Secretaria de Extensión Universitaria</b></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

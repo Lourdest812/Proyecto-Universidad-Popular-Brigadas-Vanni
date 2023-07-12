@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link a style.css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!--Link a favicon-->
+    <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <!--Link a fontawesome-->
+    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+
+     <!--Links a Google fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+    <title>Inicio</title>
+</head>
+<body>
+    <header>
+        <label class="logo">
+            <a href="/index"><img src="static/img/logo_no_background.png" alt="logo-upb" sizes="32x32"></a>
+        </label>
+        <div class="uni">
+            <h3><a href="/index">UPBV</a></h3>
+        </div>
+        <nav>
+            <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            <ul class="links">
+                <li><a class="active" href="/index">Inicio</a></li>
+                <li><a href="/cursos">Cursos</a></li>
+                <li><a href="/about">Sobre nosotros</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+                <li><a href="/gestion">Gestión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <div class="container">
+            <div class="image-container">
+                <img src="static/img/fachada_2.jpg" alt="universidad">
+            </div>
+            <h1>Universidad Popular Brigadas Vanni</h1>
+            <div>
+                <p>Este es un proyecto que, junto a la Universidad Nacional de Córdoba, tiene como objetivo acompañar y formar a quienes quieran crecer y capacitarse; sin importar el contexto social al que pertenezcan.
+                    Es una Universidad Popular que de la mano de su Rector (Luis Vanni) y junto a la Secretaría de Extención Universitaria de la UNC, brindan oportunidades a aquellos que creían no tenerlas.
+                    La Universidad Popular es un medio por el cual la Universidad Pública, a través de Extensión Universitaria, puede llegar a todos y responder a las necesidades de la sociedad, fuera de sus claustros. 
+                    La extensión universitaria es la forma mediante la cual las Universidades llegan, no sólo a los alumnos que concurren a sus aulas, sino también al resto de la sociedad.
+                </p>
+            </div>
+            <div class="frase">
+                <h2>"Para vencer la POBREZA..."</h2>
+            </div>
+        </div>
+    </main>
+    <footer>
+            <div class="footer-content">
+                <ul class="redsoc">
+                    <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li> <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li> <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+                <div class="footer-bottom">
+                    <p><b>Derechos Reservados @2023</b></p>
+                </div>
+                <div class="asoc">
+                    <div class="unc">
+                        <a href="https://www.unc.edu.ar/"><img src="img/unc.jpg" alt="unc"></a>
+                        <p><b>Universidad Nacional de Córdoba</b></p>
+                    </div>
+                    <div class="seu">
+                        <a href="https://www.unc.edu.ar/extensi%c3%b3n/"><img src="img/SEU.jpg" alt="seu"></a>
+                        <p><b>Secretaria de Extensión Universitaria</b></p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>

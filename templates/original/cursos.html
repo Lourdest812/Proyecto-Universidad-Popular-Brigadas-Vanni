@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link a style.css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!--Link a favicon-->
+    <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <!--Link a fontawesome-->
+    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+
+     <!--Links a Google fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+    <title>Cursos</title>
+</head>
+<body>
+    <header>
+        <label class="logo">
+            <a href="/index"><img src="static/img/logo_no_background.png" alt="logo-upb" sizes="32x32"></a>
+        </label>
+        <div class="uni">
+            <h3><a href="/index">UPBV</a></h3>
+        </div>
+        <nav>
+            <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            <ul class="links">
+                <li><a href="/index">Inicio</a></li>
+                <li><a class="active" href="/cursos">Cursos</a></li>
+                <li><a href="/about">Sobre nosotros</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+                <li><a href="/gestion">Gestión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="titulo_cursos">Listado de cursos y horarios</h2>
+        <section class="tabla">
+            <table>
+                <tr>
+                    <th>Curso</th>
+                    <th>Código</th>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+                <tr>
+                    <td class="izquierda">Java</td>
+                    <td>1</td>
+                    <td>Martes y Jueves</td>
+                    <td>16:00-18:00</td>
+                </tr>
+                <tr>
+                    <td  class="izquierda">Pyhton</td>
+                    <td>2</td>
+                    <td>Lunes</td>
+                    <td>17:00-19:00</td>
+                </tr>
+                <tr>
+                    <td  class="izquierda">Node.js</td>
+                    <td>3</td>
+                    <td>Jueves y sábado</td>
+                    <td>18:00-20:00</td>
+                </tr>
+                <tr>
+                    <td class="izquierda">Javascript</td>
+                    <td>4</td>
+                    <td>Lunes y miércoles</td>
+                    <td>15:00-17:00</td>
+                </tr>
+                <tr>
+                    <td class="izquierda">Testing QA</td>
+                    <td>5</td>
+                    <td>Miércoles y viernes</td>
+                    <td>18:00-20:00</td>
+                </tr>
+                <tr>
+                    <td class="izquierda">Data Analytics</td>
+                    <td>6</td>
+                    <td>Jueves y sábado</td>
+                    <td>9:00-11:00</td>
+                </tr>
+                <tr>
+                    <td class="izquierda">SQL Server</td>
+                    <td>7</td>
+                    <td>Lunes y miércoles</td>
+                    <td>11:00-13:00</td>
+                </tr>
+                <tr>
+                    <td class="izquierda">Mongo DB</td>
+                    <td>8</td>
+                    <td>Martes y jueves</td>
+                    <td>9:00-11:00</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+            <div class="footer-content">
+                <ul class="redsoc">
+                    <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li> <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li> <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+                <div class="footer-bottom">
+                    <p><b>Derechos Reservados @2023</b></p>
+                </div>
+                <div class="asoc">
+                    <div class="unc">
+                        <a href="https://www.unc.edu.ar/"><img src="img/unc.jpg" alt="unc"></a>
+                        <p><b>Universidad Nacional de Córdoba</b></p>
+                    </div>
+                    <div class="seu">
+                        <a href="https://www.unc.edu.ar/extensi%c3%b3n/"><img src="img/SEU.jpg" alt="seu"></a>
+                        <p><b>Secretaria de Extensión Universitaria</b></p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>

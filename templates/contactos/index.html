@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link a style.css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!--Link a favicon-->
+    <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <!--Link a fontawesome-->
+    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+
+     <!--Links a Google fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+     
+    <title>Gestión</title>
+</head>
+<body>
+    <header>
+        <label class="logo">
+            <a href="/index"><img src="static/img/logo_no_background.png" alt="logo-upb" sizes="32x32"></a>
+        </label>
+        <div class="uni">
+            <h3><a href="/index">UPBV</a></h3>
+        </div>
+        <nav>
+            <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            <ul class="links">
+                <li><a href="/index">Inicio</a></li>
+                <li><a href="/cursos">Cursos</a></li>
+                <li><a href="/about">Sobre nosotros</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+                <li><a class="active" href="/gestion">Gestión</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <div class="flash-message">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <p>{{message}}</p>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </div>
+    <h1>Gestión de estudiantes</h1>
+    <div class="formulario-gestion">
+        <form action="/create" method='POST'enctype="multipart/form-data">
+            <div>
+            Nombre completo: <input type="text" name="fullname">
+            </div>
+            <div>
+            Correo: <input type="text"name="email">
+            </div>
+            <div>
+            Teléfono: <input type="text" name="phone">
+            </div>
+            <div>
+            Género:
+           <input type="radio" name="genero" value="Masculino"  class="gender">Masculino
+           <input type="radio" name="genero" value="Femenino" class="gender">Femenino
+           <input type="radio" name="genero" value="Otro" class="gender">Otro
+            </div>
+            <div>
+            País: <input type="text" name="pais">
+            </div>
+            <div>
+            Foto: <input type="file" name="foto">
+            </div>
+            <div class="btn">
+                <button type="submit">Agregar</button>
+            </div>
+        </form>
+    </div>
+    <h1>Estudiantes registrados</h1>
+    <div class="tabla">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre Completo</th>
+                    <th>Género</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                    <th>País</th>
+                    <th>Foto</th>
+                    <th>Operaciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for contacto in contactos %}
+                <tr>
+                    <td>{{contacto.1}}</td>
+                    <td>{{contacto.2}}</td>
+                    <td>{{contacto.3}}</td>
+                    <td>{{contacto.4}}</td>
+                    <td>{{contacto.5}}</td>
+                    <td>
+                        <img class="img-thumbnail" width="100" src="uploads/{{contacto.6}}" alt="">
+                    </td>
+                    <td>
+                        <a href="/edit/{{contacto.0}}" class="button-edit">Editar</a>
+                        <a href="/delete/{{contacto.0}}" class="button-delete">Eliminar</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</main>
+<footer>
+    <div class="footer-content">
+        <ul class="redsoc">
+            <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li> <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li> <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+        <div class="footer-bottom">
+            <p><b>Derechos Reservados @2023</b></p>
+        </div>
+        <div class="asoc">
+            <div class="unc">
+                <a href="https://www.unc.edu.ar/"><img src="static/img/unc.jpg" alt="unc"></a>
+                <p><b>Universidad Nacional de Córdoba</b></p>
+            </div>
+            <div class="seu">
+                <a href="https://www.unc.edu.ar/extensi%c3%b3n/"><img src="static/img/SEU.jpg" alt="seu"></a>
+                <p><b>Secretaria de Extensión Universitaria</b></p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

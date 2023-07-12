@@ -1,0 +1,666 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    /*footer*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+}
+
+main{
+    padding: 100px 100px 0px 100px;
+}
+
+h1{
+    font-size: 2rem;
+    color: rgb(11, 13, 114);
+    padding: 20px 0 20px 0;
+    /* top | right | bottom | left */
+}
+
+h2{
+    font-size: 1.5rem;
+    color: rgb(11, 13, 114);
+    /* top | right | bottom | left */
+}
+
+
+
+.titulo_cursos{
+    font-size: 1.5rem;
+    color: rgb(11, 13, 114);
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+header{
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    line-height: 50px;
+    background:rgb(255, 255, 255);
+    width: 100%;
+    position: fixed;
+}
+
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+header * {
+    display: inline;
+    height: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.uni{
+    font-size: 30px;
+    padding-top: 15px;
+    color: rgb(11, 13, 114);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.uni a{
+    color: rgb(11, 13, 114);
+}
+
+.uni a:hover{
+    color: #190894a8;
+}
+
+p{
+    font-size: 18px;
+    font-family: 'Montserrat' sans-serif;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    text-align: center;
+   
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.links, li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.links li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+.links li a{
+    list-style-type: none;
+    color:rgb(5, 7, 78);
+    text-decoration:none;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1,75rem;
+    font-weight: 600;
+}
+
+
+ .logo{
+    padding: 15px;
+    text-align: center;
+}
+
+
+/*MENU HAMBURGUESA Y MENÚ DESPLEGABLE*/
+
+.links a.active, .links a:hover{
+    background: rgba(11, 13, 114, 0.987);
+    border-radius: 30px;
+    transition: .5s;
+    color:#fff;
+}
+
+/*ÍCONO MENÚ HAMBURGUESA*/
+.checkbtn{
+    font-size: 30px;
+    color: rgb(12, 12, 87);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+/*RESPONSIVE*/
+@media(max-width: 992px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #fefefe;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a:hover, nav ul li a.active{
+        background: none;
+        color: rgba(244, 242, 237, 0.956);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    main{
+        /* top | right | bottom | left */
+        padding: 10px 10px 20px 10px;
+        font-size: 16px;
+    }
+    .video iframe{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .video {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .container .image-container img{
+        max-width: 100%;
+        height: auto;
+    }
+    .user-profile{
+        max-width: 100%;
+    }
+    #current-image { 
+        max-width: 100%;
+        height: auto;
+      } 
+    
+}
+
+/*FOOTER - hay que arreglarlo*/
+footer{
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(2, 3, 53);;
+    width: 100%;
+    color: #fff;
+    padding: 3rem;
+    margin-top: auto;
+    top: 100%;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.redsoc{
+    color:white;
+    font-size: 1vw;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.redsoc li{
+    margin: 0 10px;
+}
+
+.redsoc a{
+    color: #ffff;
+    margin: 0px 6px;
+    font-size: 2vw;
+}
+
+.redsoc a:hover i{
+    color: aqua;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.unc{
+    width: 120px;
+}
+
+.seu{
+    width: 120px;
+}
+
+.unc img{
+    width: 100%;
+    max-width: 100px;
+    cursor: pointer;
+}
+
+.seu img{
+    width: 100%;
+    max-width: 50px;
+    size: 10px;
+    cursor: pointer;
+}
+
+.asoc{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    
+}
+
+.asoc p{
+    font-size: 10px;
+    display: block;
+    flex-direction: column;
+}
+
+/*IMAGEN Y FRASE INDEX*/
+.details{
+    /* top | right | bottom | left */
+    padding: 10px 0 20px 0;
+}
+
+.container .frase h2{
+    font-family: 'Dancing script';
+    text-align: center;
+    color: red;
+    font-size: 3rem;
+    font-weight: normal;
+
+}
+
+.container .frase{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+
+.container{
+    max-width: 100%;
+    align-items: center;
+}
+
+.container .image-container{
+    max-width: 100%;
+    /*text-align: center;*/
+    
+}
+
+
+.image-container img{
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    object-fit: fill;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.752);*/
+    /*box-shadow:0px 4px 8px 0px #00000085;
+    clip-path:polygon(0 0,100% 0,200% 100%,200% 200%,100% 200%,0 100%);
+    /*width: 80%;
+    background-color: white;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding-left: 20px;*/
+}
+
+/*TABLA DE CURSOS Y CONTACTOS*/
+
+th, td {
+    padding: 8px;
+}
+
+.izquierda{
+    background-color: rgb(255, 184, 18);
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+th{
+    background-color: #222223;
+    color: white;
+    font-size: 0.875rem;
+	text-transform: uppercase;
+	letter-spacing: 2%;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+  
+  tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tbody tr:nth-child(even) .izquierda {
+    background-color: rgba(255, 187, 0, 0.879);
+  }
+
+
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+.tabla{
+    padding-bottom: 50px;
+    vertical-align: middle;
+    text-align: center;
+    overflow-x:auto;
+}
+
+.tabla-contactos{
+    padding: 50px;
+}
+
+/*CONTACTIOS GESTIÓN*/
+.formulario-gestion{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 2%;
+    margin: 1% 15%;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-delete{
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+
+.button-edit{
+    width: 50%;
+    background-color: rgb(31, 103, 237);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-edit:hover{
+    background-color: rgb(11, 13, 142);
+}
+
+.button-delete:hover{
+    background-color: rgb(182, 10, 10);
+}
+
+button[type=submit]{
+    width: 50%;
+    background-color: rgb(125, 170, 59);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+.btn[type=submit]:hover{
+    background-color: rgb(114, 183, 12);
+}
+
+input[type=text],
+input[type="file"], select{
+    width: 75%;
+    padding: 1vw;
+    margin: 1vw;
+    display: inline-block;
+    border: 1vw;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+/*VIDEO SOBRE NOSOTROS*/
+.video{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.video iframe{
+    width: 900px;
+    height: 500px;
+}
+
+
+/*CONTACTOS RANDOM API*/
+
+.titulo_contact h1{
+    text-align: center;
+}
+
+.user-profile{
+    padding-top: 20px;
+    background-color: #0a95f1;
+    margin-top: 6%;
+    border-radius: 1rem;
+    overflow: hidden;
+    height: 100%;
+    width: 400px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 0;
+}
+
+.profile-top{
+    /*background: linear-gradient(to right, #6e2e80 #0eac13);*/
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+}
+
+.profile-top .profile-info{
+    margin-top: 1.5rem;
+}
+
+.profile-top img{
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.profile-bottom{
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+.profile-bottom .profile-info{
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+    width: 100%;
+    font-size: 13px;
+}
+
+.button{
+    background-color: #ff8800;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+
+.botones{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.container-api{
+    padding: 20px;
+}
+
+.btn_1{
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+/*GALERÍA DE IMÁGENES DE ABOUTUS, NO ES DEL TODO RESPONSIVE, FALLA EN 
+ALGUNOS DISPOSITIVOS*/
+  
+  #image-gallery {  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  max-width: 100%;
+}
+  
+  #current-image { 
+    width: 900px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  } 
+
+  #current-image img{
+    max-width: 100%;
+}
+
+  #image-thumbs { 
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px;
+    max-width: 100%;
+  }
+
+  .thumb { 
+    width: 70px; 
+    height: 70px; 
+    object-fit: cover; 
+    margin-right: 10px; 
+    cursor: pointer;
+    max-width: 100%;
+  }
+
+  .titulo_aboutUs h2{
+    font-size: 1.5rem;
+    color: rgb(11, 13, 114);
+    text-align: center;
+}
+
+.titulo_contacto{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: rgb(11, 13, 114);
+    /* top | right | bottom | left */
+    padding-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#button-image{
+    display: grid;  
+    margin: auto;
+    text-align: center;
+}
+
+button:disabled{
+    background-color: #00000064;
+    cursor:not-allowed;
+}
+
+.flash-message{
+}
+
+.flash-message p{
+    border: none;
+    color: rgb(8, 157, 5);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    /*border-radius: 1rem;*/
+}
+
+.gender{
+    margin: 10px;
+}
+
