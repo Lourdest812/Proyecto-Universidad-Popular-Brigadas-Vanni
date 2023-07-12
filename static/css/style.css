@@ -26,14 +26,15 @@ main{
 h1{
     font-size: 2rem;
     color: rgb(11, 13, 114);
-    padding: 20px 0 20px 0;
     /* top | right | bottom | left */
+    padding: 20px 0 20px 0;
 }
 
 h2{
     font-size: 1.5rem;
     color: rgb(11, 13, 114);
     /* top | right | bottom | left */
+    padding: 20px 0 20px 0;
 }
 
 
@@ -192,7 +193,7 @@ nav ul{
     }
     main{
         /* top | right | bottom | left */
-        padding: 10px 10px 20px 10px;
+        padding: 100px 10px 0px 10px;
         font-size: 16px;
     }
     .video iframe{
